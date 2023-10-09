@@ -1,0 +1,3 @@
+<?
+header("Location: Sushi.html");
+?>
