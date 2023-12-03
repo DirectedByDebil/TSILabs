@@ -1,0 +1,99 @@
+table
+{
+    border: 3px solid #198754;
+}
+tr
+{
+    padding: 10px;
+}
+th
+{
+    padding: 10px;
+}
+td
+{
+    padding: 10px;
+}
+a
+{
+    color: #198754;
+}
+
+ol {
+    /* убираем стандартную нумерацию */
+    list-style: none;
+    /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+    counter-reset: li;
+}
+li:before {
+    /* Определяем элемент, который будет нумероваться — li.
+     Псевдоэлемент before указывает, что содержимое,
+      вставляемое при помощи свойства content, будет располагаться перед пунктами списка.
+       Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+    counter-increment: li;
+    /* С помощью свойства content выводится номер пункта списка.
+     counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем.
+      Точка в кавычках добавляет разделяющую точку между цифрами,
+       а точка с пробелом добавляется перед содержимым каждого пункта списка */
+    content: counters(li, ".") ". ";
+    /*content: "Таблица " counters(li,"")*/;
+}
+
+.orange
+{
+    color: orange;
+    font-family: "Courier New";
+}
+
+.background-blue
+{
+    background: blue;
+}
+
+.blue-button
+{
+    appearance: none;
+    min-width: 100px;
+    border: 0;
+    border-radius: 5px;
+    background: #4676D7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+.red-button
+{
+    appearance: none;
+    min-width: 100px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #a52834;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+.white-button
+{
+    appearance: none;
+    min-width: 100px;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+.green-button
+{
+    appearance: none;
+    min-width: 100px;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #198754;
+    color: white;
+}
+
+

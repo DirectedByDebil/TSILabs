@@ -122,7 +122,9 @@ class Filter
         <td>  $row[content] </td>
         <td>  $row[cost]  </td>
         <td> <input class='blue-button' type='submit' name=\"Update $row[photo]\" value='Update'> </td>
-        <td> <input class='red-button' type='submit' name=\"Delete $row[photo]\" value='Delete'> </td>
+        <form action=''>
+            <td> <input class='red-button' type='submit' name=\"Delete $row[photo]\" value='Delete'> </td>
+        </form>
     </form>
              ";
     }
